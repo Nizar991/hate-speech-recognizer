@@ -1,5 +1,20 @@
+# virtual env
 venv/
+
+# python cache
 __pycache__/
 *.pyc
+
+# environment variables
 .env
+
+# raw datasets
 data/*.csv
+
+# processed data & models (LDA outputs)
+data/processed/
+*.mm
+*.mm.index
+*.gensim
+*.npy
+*.pkl
