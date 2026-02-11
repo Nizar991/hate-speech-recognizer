@@ -15,14 +15,14 @@ def fuzzy_decision(scores):
     scores = normalize(scores)
 
     return {
-        "hate_confidence": min(1.0, scores["hate"] + 0.5 * scores["offensive"]),
+        "hate_confidence": min(1.0, scores["hate"] + 0.3 * scores["offensive"]),
         "offensive_confidence": min(1.0, scores["offensive"] + 0.3 * scores["hate"]),
         "non_hate_confidence": scores["non_hate"]
     }
 
 
 if __name__ == "__main__":
-    sentence = "Shut up, you fucking cunt!"
+    sentence = "It’s interesting how some people can make the smallest things feel so important."
 
     # 🔗 Dynamic link to Block 2.4
     group_scores = get_group_scores(sentence)
