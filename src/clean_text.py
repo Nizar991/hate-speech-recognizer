@@ -31,6 +31,8 @@ def clean_and_tokenize(text: str):
     return tokens
 
 
-if __name__ == "__main__":
-    sample = "I don't like running cars and I’ll never stop!"
-    print("Tokens:", clean_and_tokenize(sample))
+# if __name__ == "__main__":
+#     sample = "I don't like running cars and I’ll never stop!"
+#     print("Tokens:", clean_and_tokenize(sample))
+
+    # this sentence only works if this file is executed

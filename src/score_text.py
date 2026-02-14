@@ -56,10 +56,12 @@ def get_group_scores(sentence: str) -> dict:
 
 
 # CLI testing only (safe to delete later)
-if __name__ == "__main__":
-    sentence = "Shut up, you fucking cunt!"
-    scores = get_group_scores(sentence)
+# if __name__ == "__main__":
+#     sentence = "Shut up, you fucking cunt!"
+#     scores = get_group_scores(sentence)
 
-    print("Sentence:", sentence)
-    print("Cleaned tokens:", clean(sentence))
-    print("Group scores:", scores)
+#     print("Sentence:", sentence)
+#     print("Cleaned tokens:", clean(sentence))
+#     print("Group scores:", scores)
+
+# this sentence only works if this file is executed
